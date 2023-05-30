@@ -1,9 +1,6 @@
 ##### Pseudo ####
 # 
-# while (vet[pos] != -1)
-# 	vet1[pos] = vet2[pos];
-#  	pos++;
-# }
+#  while (vetor[i] == k) i++;
 #
 #################
 .data
