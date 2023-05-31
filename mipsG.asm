@@ -8,7 +8,6 @@ main:
 	addi $s2, $zero, 5 # b
 	addi $s0, $zero, 1
 		
-	addi $sp, $sp, -32
 	addi $t1, $zero, 10
 	sw $t1, 32($sp)
 	

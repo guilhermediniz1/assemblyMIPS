@@ -7,7 +7,6 @@ main:
 	addi $s1, $zero, 21 # a
 	addi $s0, $zero, 1
 		
-	addi $sp, $sp, -8
 	addi $t1, $zero, 10
 	sw   $t1, 8($sp)
 	

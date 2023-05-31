@@ -1,6 +1,6 @@
 main:
-	add $s0, $zero, 3 # a= 3
-	add $s1, $zero, 7 # b = 7
+	addi $s0, $zero, 3 # a= 3
+	addi $s1, $zero, 7 # b = 7
 	
 	add $a1, $zero, $s0
 	add $a2, $zero, $s1
