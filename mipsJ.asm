@@ -11,11 +11,11 @@ main:
 	slti $t1, $s1, 3
 	slti $t2, $s2, 3
 	
-	beq  $t1, $zero, satisfies
-	beq  $t2, $s0, satisfies 
+	beq  $t1, $zero, satisfaz
+	beq  $t2, $s0, satisfaz 
 	addi $s4, $zero, 40 # c = 40
 	j end
 	
-	satisfies:
-	addi $s4, $zero, 30 # c = 30
+	satisfaz:
+    addi $s4, $zero, 30 # c = 30
 end:

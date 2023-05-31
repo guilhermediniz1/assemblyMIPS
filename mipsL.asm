@@ -13,15 +13,15 @@ main:
 	slti $t1, $s2, 3
 	slti $t2, $s3, 3
 	
-	beq  $s2, $s1, accept
-	bne  $t1, $zero, reject
-	bne  $t2, $s0, reject 
-	j accept
+	beq  $s2, $s1, aceita
+	bne  $t1, $zero, rejeita
+	bne  $t2, $s0, rejeita 
+	j aceita
 	
-	accept:
-	addi $s4, $zero, 30 # c = 30
-	j end
+	aceita:
+    addi $s4, $zero, 30 # c = 30
+    j end
 	
-	reject:
-	addi $s4, $zero, 40 # c = 40
+	rejeita:
+    addi $s4, $zero, 40 # c = 40
 end:

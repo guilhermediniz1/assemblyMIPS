@@ -12,10 +12,10 @@ main:
 	sw   $t1, 8($sp)
 	
 	slti $t2, $s1, 20
-	beq  $t2, $s0, isSmaller
+	beq  $t2, $s0, ehMenor
 	addi $s3, $zero, 1
 	j end
-	isSmaller:
-	lw $t3, 8($sp)
-	add $s3, $t3, $s1 # f = g[8]
+	ehMenor:
+    lw $t3, 8($sp)
+    add $s3, $t3, $s1 # f = g[8]
 end:

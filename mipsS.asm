@@ -19,10 +19,10 @@
 	bne $t1, $s3, while
 	j end
 	while:
-	lw $t0, ($s1)
-	sw $t0, ($s0)
-	addi $s0, $s0, 4
-	addi $s1, $s1, 4
-	lw $t1, ($s0)
-	bne $t1, $s3, while
+    lw $t0, ($s1)
+    sw $t0, ($s0)
+    addi $s0, $s0, 4
+    addi $s1, $s1, 4
+    lw $t1, ($s0)
+    bne $t1, $s3, while
 end:

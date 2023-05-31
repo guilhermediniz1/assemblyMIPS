@@ -13,10 +13,10 @@ main:
 	sw   $t1, 48($sp)
 	
 	slt $t2, $s1, $s2
-	bne $t2, $s0, isSmaller
-		addi $s3, $zero, 1
-		j end
-	isSmaller:
+	bne $t2, $s0, ehMenor
+  addi $s3, $zero, 1
+  j end
+	ehMenor:
 		lw $t3, 48($sp)
 		add $s3, $zero, $t3 # f = g[12]
 end:

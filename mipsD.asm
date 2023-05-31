@@ -11,8 +11,8 @@ main:
 	addi $s3, $zero, 20 # h
 	
 	bne $s0, $s1, else
-		add $s4, $s2, $s3   # f = g + h
-		j end
+  add $s4, $s2, $s3   # f = g + h
+  j end
 	else:
-		sub $s4, $s2, $s3 # f = g - h
+    sub $s4, $s2, $s3 # f = g - h
 end:

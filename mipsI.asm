@@ -10,9 +10,9 @@ main:
 	addi $s0, $zero, 0
 		
 	slti $t2, $s1, 21
-	beq  $t2, $s0, isGreater
+	beq  $t2, $s0, ehMaior
 	addi $s4, $zero, 1
 	j end
-	isGreater:
-	add $s4, $s2, $s3 # f = b + c
+	ehMaior:
+    add $s4, $s2, $s3 # f = b + c
 end:

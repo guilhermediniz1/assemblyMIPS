@@ -11,11 +11,11 @@ main:
 	slti $t1, $s1, 3
 	slti $t2, $s2, 3
 	
-	bne  $t1, $zero, reject
-	bne  $t2, $s0, reject 
+	bne  $t1, $zero, rejeita
+	bne  $t2, $s0, rejeita 
 	addi $s4, $zero, 30 # c = 30
 	j end
 	
-	reject:
-	addi $s4, $zero, 40 # c = 40
+	rejeita:
+    addi $s4, $zero, 40 # c = 40
 end:

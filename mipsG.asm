@@ -13,10 +13,10 @@ main:
 	sw $t1, 32($sp)
 	
 	slt $t2, $s2, $s1
-	beq $t2, $s0, isGreater
-		addi $s3, $zero, 1
-		j end
-	isGreater:
+	beq $t2, $s0, ehMaior
+  addi $s3, $zero, 1
+  j end
+	ehMaior:
 		lw $t3, 32($sp)
 		add $s3, $zero, $t3 # f = g[8]
 end:

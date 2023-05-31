@@ -24,8 +24,8 @@
 	j end
 	
 	while:
-	addi $s3, $s3, 4 # i++;
-	add $s0, $t2, $s3
-	lw $t1, ($s0)
-	beq $t1, $s1, while
+    addi $s3, $s3, 4 # i++;
+    add $s0, $t2, $s3
+    lw $t1, ($s0)
+    beq $t1, $s1, while
 	end:
